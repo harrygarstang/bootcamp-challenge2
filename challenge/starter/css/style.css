@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   background-color: rgb(103, 114, 121)
 }
@@ -13,6 +14,13 @@ body {
 #SubtitleNavBar {
   background-color: rgb(255, 255, 255);
 
+}
+
+#id-photo {
+  position: relative;
+  float: left;
+  top: -200px;
+  width: 10vw;
 }
 
 #bannerSubtitle {
@@ -82,11 +90,11 @@ p {
     "item-2 item-3"
     "item-4 item-5";
   width: 70vw;
-  float:right;
+  float: right;
 }
 
 .work-item {
-  background-color: aquamarine;
+  background-color: rgb(203, 203, 203);
   padding: 5px 5px 5px;
   height: 300px;
   margin: 5px;
@@ -98,7 +106,19 @@ p {
 }
 
 .work-item>a>img {
-  height: 100%;
+  height: 90%;
   width: 100%;
   object-fit: cover;
+}
+
+/* Mobile accessability */
+@media (min-width: 600px) {
+and (min-device-width: 320px);
+and (max-device-width: 480px);
+}
+
+#footerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
