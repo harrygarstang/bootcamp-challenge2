@@ -23,8 +23,12 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 20px 20px 20px;
 
+}
 
-
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 h1,
@@ -50,7 +54,6 @@ p {
 }
 
 #navBar h1 {
-  width: 25%;
   font-weight: 500;
 }
 
@@ -67,14 +70,36 @@ p {
 }
 
 /* Grid css */
+
 .portfoliogrid {
   display: grid;
   height: 400px;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    "1 1"
-    " 2 3"
-    "4 5";
+    "item-1 item-1"
+    "item-2 item-3"
+    "item-4 item-5";
+  width: 70vw;
+  float: right;
+}
+
+.work-item {
+  background-color: aquamarine;
+  padding: 5px 5px 5px;
+  height: 300px;
+  margin: 5px;
+
+}
+
+.work-item:first-child {
+  background-color: red;
+  grid-column: span 2;
+}
+
+.work-item>a>img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
