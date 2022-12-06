@@ -30,8 +30,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-shrink: 0;
-  overflow: hidden;
 }
 
 h1,
@@ -76,7 +74,6 @@ p {
 
 .portfoliogrid {
   display: grid;
-  height: 400px;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -85,6 +82,7 @@ p {
     "item-2 item-3"
     "item-4 item-5";
   width: 70vw;
+  float:right;
 }
 
 .work-item {
